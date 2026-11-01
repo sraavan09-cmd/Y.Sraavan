@@ -1,6 +1,6 @@
 # Lab 1: Node.js and Express Server
 
-> **🔗 Live Deployment URL:** _[To be added after deployment on Render]_
+> **🔗 Live Deployment URL:** [https://r-manikanta.onrender.com](https://r-manikanta.onrender.com)
 
 ---
 
