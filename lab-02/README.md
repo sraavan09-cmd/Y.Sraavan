@@ -1,6 +1,11 @@
 # Lab 2: SQLite Database and CRUD Routes
 
-> **🔗 Live Deployment URL:** [https://r-manikanta-unzk.onrender.com](https://r-manikanta-unzk.onrender.com)
+> ### 🌐 Live Deployed Endpoints (Render)
+> - **Main Server / Student Info:** [https://r-manikanta-unzk.onrender.com/](https://r-manikanta-unzk.onrender.com/)
+> - **GET All Books:** [https://r-manikanta-unzk.onrender.com/books/](https://r-manikanta-unzk.onrender.com/books/)
+> - **GET Single Book (ID 1):** [https://r-manikanta-unzk.onrender.com/books/1/](https://r-manikanta-unzk.onrender.com/books/1/)
+> - **GET Single Book (ID 2):** [https://r-manikanta-unzk.onrender.com/books/2/](https://r-manikanta-unzk.onrender.com/books/2/)
+> - **GET 404 Error Test (ID 999):** [https://r-manikanta-unzk.onrender.com/books/999/](https://r-manikanta-unzk.onrender.com/books/999/)
 
 ---
 
@@ -114,13 +119,15 @@ The function `initializeDBAndServer()` handles:
 
 ## 📡 API Endpoints
 
-| Method | Path | Description | Status Code |
-|--------|------|-------------|-------------|
-| `GET` | `/books/` | Retrieve all books | `200 OK` |
-| `GET` | `/books/:bookId/` | Retrieve a single book by ID | `200 OK` / `404 Not Found` |
-| `POST` | `/books/` | Add a new book | `201 Created` / `400 Bad Request` |
-| `PUT` | `/books/:bookId/` | Update an existing book | `200 OK` / `404 Not Found` |
-| `DELETE` | `/books/:bookId/` | Delete a book | `200 OK` / `404 Not Found` |
+| Method | Path | Live URL | Description | Status Code |
+|:---|:---|:---|:---|:---|
+| `GET` | `/` | [Open Live Link](https://r-manikanta-unzk.onrender.com/) | Welcome message, student details & endpoint list | `200 OK` |
+| `GET` | `/books/` | [Open Live Link](https://r-manikanta-unzk.onrender.com/books/) | Retrieve all books from SQLite database | `200 OK` |
+| `GET` | `/books/:bookId/` | [Open Live Link (ID 1)](https://r-manikanta-unzk.onrender.com/books/1/) | Retrieve a single book by ID | `200 OK` / `404 Not Found` |
+| `POST` | `/books/` | [API Endpoint](https://r-manikanta-unzk.onrender.com/books/) | Add a new book to the database | `201 Created` / `400 Bad Request` |
+| `PUT` | `/books/:bookId/` | [API Endpoint (ID 1)](https://r-manikanta-unzk.onrender.com/books/1/) | Update an existing book's details | `200 OK` / `404 Not Found` |
+| `DELETE` | `/books/:bookId/` | [API Endpoint (ID 1)](https://r-manikanta-unzk.onrender.com/books/1/) | Delete a book by ID | `200 OK` / `404 Not Found` |
+| `GET` | `/books/999/` | [Open Live Link (404 Test)](https://r-manikanta-unzk.onrender.com/books/999/) | Test 404 error response for non-existent book | `404 Not Found` |
 
 ---
 
