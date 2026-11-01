@@ -126,12 +126,12 @@ npm start
 
 ## 📡 API Endpoints
 
-| Method | Path | Description | Status Code |
-|--------|------|-------------|-------------|
-| `GET` | `/` | Returns a welcome message with student name and lab info | `200 OK` |
-| `GET` | `/about` | Returns student details (name, reg. no., section) in JSON | `200 OK` |
-| `GET` | `/time` | Returns the current server date and time | `200 OK` |
-| `GET` | `/unknown` | Any undefined route returns a 404 error message | `404 Not Found` |
+| Method | Path | Live URL | Description | Status Code |
+|:---|:---|:---|:---|:---|
+| `GET` | `/` | [Open Live Link](https://r-manikanta.onrender.com/) | Returns a welcome message with student name and lab info | `200 OK` |
+| `GET` | `/about` | [Open Live Link](https://r-manikanta.onrender.com/about) | Returns student details (name, reg. no., section) in JSON | `200 OK` |
+| `GET` | `/time` | [Open Live Link](https://r-manikanta.onrender.com/time) | Returns the current server date and time | `200 OK` |
+| `GET` | `/unknown` | [Open Live Link (404 Test)](https://r-manikanta.onrender.com/unknown) | Any undefined route returns a 404 error message | `404 Not Found` |
 
 ### Example Responses
 
@@ -215,10 +215,10 @@ npm start
 4. **Deploy** and wait for the build to complete.
 
 5. **Verify** by visiting the provided Render URL and testing all endpoints:
-   - `https://r-manikanta.onrender.com/`
-   - `https://r-manikanta.onrender.com/about`
-   - `https://r-manikanta.onrender.com/time`
-   - `https://r-manikanta.onrender.com/unknown`
+   - **GET / (Welcome):** [https://r-manikanta.onrender.com/](https://r-manikanta.onrender.com/)
+   - **GET /about (Student Info):** [https://r-manikanta.onrender.com/about](https://r-manikanta.onrender.com/about)
+   - **GET /time (Current Time):** [https://r-manikanta.onrender.com/time](https://r-manikanta.onrender.com/time)
+   - **GET /unknown (404 Test):** [https://r-manikanta.onrender.com/unknown](https://r-manikanta.onrender.com/unknown)
 
 ---
 
