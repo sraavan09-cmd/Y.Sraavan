@@ -16,18 +16,18 @@ This repository contains all lab assignments for the **Backend Development Funda
 
 ## 📁 Labs
 
-| Lab No. | Title | Folder | Status |
-|---------|-------|--------|--------|
-| Lab 01 | Node.js and Express Server | [lab-01/](./lab-01/) | ✅ Completed |
-| Lab 02 | SQLite Database and CRUD Routes | [lab-02/](./lab-02/) | ✅ Completed |
-| Lab 03 | *Coming Soon* | lab-03/ | 🔲 Pending |
-| Lab 04 | *Coming Soon* | lab-04/ | 🔲 Pending |
-| Lab 05 | *Coming Soon* | lab-05/ | 🔲 Pending |
-| Lab 06 | *Coming Soon* | lab-06/ | 🔲 Pending |
-| Lab 07 | *Coming Soon* | lab-07/ | 🔲 Pending |
-| Lab 08 | *Coming Soon* | lab-08/ | 🔲 Pending |
-| Lab 09 | *Coming Soon* | lab-09/ | 🔲 Pending |
-| Lab 10 | *Coming Soon* | lab-10/ | 🔲 Pending |
+| Lab No. | Title | Folder | Live Deployment | Status |
+|:---|:---|:---|:---|:---:|
+| **Lab 01** | Node.js and Express Server | [lab-01/](./lab-01/) | [🔗 Live Server](https://r-manikanta.onrender.com) | ✅ Completed |
+| **Lab 02** | SQLite Database and CRUD Routes | [lab-02/](./lab-02/) | [🔗 Live Server](https://r-manikanta-unzk.onrender.com) | ✅ Completed |
+| **Lab 03** | *Coming Soon* | lab-03/ | — | 🔲 Pending |
+| **Lab 04** | *Coming Soon* | lab-04/ | — | 🔲 Pending |
+| **Lab 05** | *Coming Soon* | lab-05/ | — | 🔲 Pending |
+| **Lab 06** | *Coming Soon* | lab-06/ | — | 🔲 Pending |
+| **Lab 07** | *Coming Soon* | lab-07/ | — | 🔲 Pending |
+| **Lab 08** | *Coming Soon* | lab-08/ | — | 🔲 Pending |
+| **Lab 09** | *Coming Soon* | lab-09/ | — | 🔲 Pending |
+| **Lab 10** | *Coming Soon* | lab-10/ | — | 🔲 Pending |
 
 ---
 
