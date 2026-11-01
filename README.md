@@ -19,7 +19,7 @@ This repository contains all lab assignments for the **Backend Development Funda
 | Lab No. | Title | Folder | Status |
 |---------|-------|--------|--------|
 | Lab 01 | Node.js and Express Server | [lab-01/](./lab-01/) | ✅ Completed |
-| Lab 02 | *Coming Soon* | lab-02/ | 🔲 Pending |
+| Lab 02 | SQLite Database and CRUD Routes | [lab-02/](./lab-02/) | ✅ Completed |
 | Lab 03 | *Coming Soon* | lab-03/ | 🔲 Pending |
 | Lab 04 | *Coming Soon* | lab-04/ | 🔲 Pending |
 | Lab 05 | *Coming Soon* | lab-05/ | 🔲 Pending |
