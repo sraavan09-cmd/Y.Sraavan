@@ -1,0 +1,23 @@
+{
+  "name": "lab-01-nodejs-express-server",
+  "version": "1.0.0",
+  "description": "Lab 1 - Node.js and Express Server for Backend Development Fundamentals course",
+  "main": "server.js",
+  "scripts": {
+    "start": "node server.js",
+    "dev": "nodemon server.js",
+    "http": "node http-server.js"
+  },
+  "keywords": [
+    "nodejs",
+    "express",
+    "backend",
+    "lab1",
+    "server"
+  ],
+  "author": "Reddemoni Manikanta",
+  "license": "ISC",
+  "dependencies": {
+    "express": "^5.3.0"
+  }
+}
