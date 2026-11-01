@@ -37,3 +37,4 @@ server.listen(PORT, () => {
   console.log(`📌 Open your browser and visit: http://localhost:${PORT}`);
   console.log(`🛑 Press Ctrl + C to stop the server`);
 });
+

@@ -92,3 +92,4 @@ app.listen(PORT, () => {
   console.log(`   GET /time   → Current date and time`);
   console.log(`🛑 Press Ctrl + C to stop the server`);
 });
+

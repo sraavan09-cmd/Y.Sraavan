@@ -15,3 +15,4 @@ This folder contains screenshots of the working endpoints for Lab 1.
 2. Open your browser and visit each endpoint
 3. Press `Win + Shift + S` (Windows) to take a screenshot
 4. Save each screenshot in this folder with the names listed above
+
