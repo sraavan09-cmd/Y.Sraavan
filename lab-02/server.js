@@ -7,12 +7,10 @@ const app = express();
 const PORT = process.env.PORT || 3000;
 const dbPath = path.join(__dirname, "database.db");
 
-// Middleware to parse JSON request bodies
 app.use(express.json());
 
 let db = null;
 
-// Initialize database connection and start server
 const initializeDBAndServer = async () => {
   try {
     db = await open({
@@ -20,7 +18,6 @@ const initializeDBAndServer = async () => {
       driver: sqlite3.Database,
     });
 
-    // Create the book table if it doesn't exist
     await db.exec(`
       CREATE TABLE IF NOT EXISTS book (
         id INTEGER PRIMARY KEY AUTOINCREMENT,
@@ -31,7 +28,6 @@ const initializeDBAndServer = async () => {
       )
     `);
 
-    // Check if table is empty, if so insert 10 sample books
     const count = await db.get("SELECT COUNT(*) as total FROM book");
     if (count.total === 0) {
       await db.exec(`
@@ -61,14 +57,8 @@ const initializeDBAndServer = async () => {
 
 initializeDBAndServer();
 
-// ==========================================
-// CRUD API ENDPOINTS
-// ==========================================
-
-// 1. GET /books/ - Retrieve all books
 app.get("/books/", async (req, res) => {
   try {
-    // Parameterized queries prevent SQL injection by treating user input as data, not code
     const query = "SELECT * FROM book";
     const books = await db.all(query);
     res.status(200).json(books);
@@ -77,11 +67,9 @@ app.get("/books/", async (req, res) => {
   }
 });
 
-// 2. GET /books/:bookId/ - Retrieve a single book by ID
 app.get("/books/:bookId/", async (req, res) => {
   try {
     const { bookId } = req.params;
-    // Using ? placeholder to prevent SQL injection
     const query = "SELECT * FROM book WHERE id = ?";
     const book = await db.get(query, [bookId]);
 
@@ -95,19 +83,16 @@ app.get("/books/:bookId/", async (req, res) => {
   }
 });
 
-// 3. POST /books/ - Add a new book
 app.post("/books/", async (req, res) => {
   try {
     const { title, author, price, pages } = req.body;
 
-    // Validate request body
     if (!title || !author || !price || !pages) {
       return res.status(400).json({
         error: "All fields are required: title, author, price, pages",
       });
     }
 
-    // Using ? placeholders to prevent SQL injection
     const query =
       "INSERT INTO book (title, author, price, pages) VALUES (?, ?, ?, ?)";
     const result = await db.run(query, [title, author, price, pages]);
@@ -121,13 +106,11 @@ app.post("/books/", async (req, res) => {
   }
 });
 
-// 4. PUT /books/:bookId/ - Update an existing book
 app.put("/books/:bookId/", async (req, res) => {
   try {
     const { bookId } = req.params;
     const { title, author, price, pages } = req.body;
 
-    // Check if the book exists
     const existingBook = await db.get("SELECT * FROM book WHERE id = ?", [
       bookId,
     ]);
@@ -135,14 +118,12 @@ app.put("/books/:bookId/", async (req, res) => {
       return res.status(404).json({ error: "Book not found" });
     }
 
-    // Validate request body
     if (!title || !author || !price || !pages) {
       return res.status(400).json({
         error: "All fields are required: title, author, price, pages",
       });
     }
 
-    // Using ? placeholders to prevent SQL injection
     const query =
       "UPDATE book SET title = ?, author = ?, price = ?, pages = ? WHERE id = ?";
     await db.run(query, [title, author, price, pages, bookId]);
@@ -153,12 +134,10 @@ app.put("/books/:bookId/", async (req, res) => {
   }
 });
 
-// 5. DELETE /books/:bookId/ - Delete a book
 app.delete("/books/:bookId/", async (req, res) => {
   try {
     const { bookId } = req.params;
 
-    // Check if the book exists
     const existingBook = await db.get("SELECT * FROM book WHERE id = ?", [
       bookId,
     ]);
@@ -166,7 +145,6 @@ app.delete("/books/:bookId/", async (req, res) => {
       return res.status(404).json({ error: "Book not found" });
     }
 
-    // Using ? placeholder to prevent SQL injection
     const query = "DELETE FROM book WHERE id = ?";
     await db.run(query, [bookId]);
 
@@ -175,4 +153,3 @@ app.delete("/books/:bookId/", async (req, res) => {
     res.status(500).json({ error: error.message });
   }
 });
-
