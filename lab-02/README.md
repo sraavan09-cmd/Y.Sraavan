@@ -283,6 +283,16 @@ SELECT * FROM book WHERE id = 11;
 
 ---
 
+## 🎓 Viva Questions & Answers
+
+| Question | Answer |
+| :--- | :--- |
+| **Why await the database call?** | Database operations (I/O) are asynchronous. Using `await` ensures the JavaScript execution waits for the database query to complete and return its result before moving to the next line or sending the HTTP response back to the client. |
+| **What is SQL injection and how do placeholders prevent it?** | SQL injection is a security vulnerability where untrusted user input is directly concatenated into SQL statements, allowing attackers to execute unauthorized commands (like deleting tables). Placeholders (`?`) treat input strictly as literal values/parameters rather than executable SQL code, completely neutralizing the attack. |
+| **When is PUT used instead of POST?** | `POST` is used to create a **new** resource on the server (non-idempotent, server assigns ID). `PUT` is used to update or replace an **existing** resource at a known URI (e.g., `/books/:bookId/`) and is idempotent (sending the same request multiple times produces the same state). |
+
+---
+
 ## ✅ Conclusion
 
 In this lab, I learned:
