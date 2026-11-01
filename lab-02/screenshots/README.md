@@ -1,16 +1,15 @@
 # Screenshots
 
-This folder contains screenshots of the working CRUD endpoints for Lab 2.
+This folder contains verified screenshots of the working CRUD endpoints and SQLite database for Lab 2.
 
-## Required Screenshots
+## Screenshots List
 
-1. `get-all-books.png` – GET /books/
-2. `get-one-book.png` – GET /books/:bookId/
-3. `post-book.png` – POST /books/
-4. `put-book.png` – PUT /books/:bookId/
-5. `delete-book.png` – DELETE /books/:bookId/
-6. `404-error.png` – GET /books/999/ (book not found)
-7. `sqlite-records.png` – SQLite CLI showing all records
-8. `sqlite-after-update.png` – SQLite CLI after PUT
-9. `sqlite-after-delete.png` – SQLite CLI after DELETE
-
+1. `01-get-all-books.png` – GET /books/ (All Books - 200 OK)
+2. `02-get-one-book.png` – GET /books/1/ (Single Book - 200 OK)
+3. `03-post-book.png` – POST /books/ (Add Book - 201 Created)
+4. `04-put-book.png` – PUT /books/13/ (Update Book - 200 OK)
+5. `05-delete-book.png` – DELETE /books/13/ (Delete Book - 200 OK)
+6. `06-404-error.png` – GET /books/999/ (Book Not Found - 404 Not Found)
+7. `07-sqlite-inserted-records.png` – SQLite Database verification after POST
+8. `08-sqlite-updated-records.png` – SQLite Database verification after PUT
+9. `09-sqlite-deleted-records.png` – SQLite Database verification after DELETE

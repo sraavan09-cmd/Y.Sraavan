@@ -32,16 +32,16 @@ const initializeDBAndServer = async () => {
     if (count.total === 0) {
       await db.exec(`
         INSERT INTO book (title, author, price, pages) VALUES
-        ('The Great Gatsby', 'F. Scott Fitzgerald', 350, 180),
-        ('To Kill a Mockingbird', 'Harper Lee', 400, 281),
-        ('1984', 'George Orwell', 300, 328),
-        ('Pride and Prejudice', 'Jane Austen', 280, 432),
-        ('The Alchemist', 'Paulo Coelho', 250, 197),
-        ('Sapiens', 'Yuval Noah Harari', 550, 498),
-        ('The Lean Startup', 'Eric Ries', 480, 336),
-        ('Deep Work', 'Cal Newport', 420, 304),
-        ('Rich Dad Poor Dad', 'Robert Kiyosaki', 350, 336),
-        ('The Psychology of Money', 'Morgan Housel', 400, 256)
+        ('The Pragmatic Programmer', 'David Thomas, Andrew Hunt', 750, 352),
+        ('Clean Code', 'Robert C. Martin', 650, 464),
+        ('You Don''t Know JS: Scope & Closures', 'Kyle Simpson', 420, 144),
+        ('Designing Data-Intensive Applications', 'Martin Kleppmann', 1200, 616),
+        ('JavaScript: The Good Parts', 'Douglas Crockford', 380, 176),
+        ('Atomic Habits', 'James Clear', 450, 320),
+        ('Node.js Design Patterns', 'Mario Casciaro', 890, 660),
+        ('Learning SQL', 'Alan Beaulieu', 550, 380),
+        ('Introduction to Algorithms', 'Thomas H. Cormen', 1400, 1312),
+        ('Refactoring: Improving the Design of Existing Code', 'Martin Fowler', 790, 448)
       `);
       console.log("Inserted 10 sample books into database.");
     }
@@ -92,7 +92,10 @@ app.get("/books/:bookId/", async (req, res) => {
     const book = await db.get(query, [bookId]);
 
     if (book === undefined) {
-      res.status(404).json({ error: "Book not found" });
+      res.status(404).json({
+        error: "Not Found",
+        message: `Book with ID ${bookId} not found.`
+      });
     } else {
       res.status(200).json(book);
     }
@@ -116,7 +119,7 @@ app.post("/books/", async (req, res) => {
     const result = await db.run(query, [title, author, price, pages]);
 
     res.status(201).json({
-      message: "Book added successfully",
+      message: "Book Added Successfully",
       bookId: result.lastID,
     });
   } catch (error) {
@@ -133,7 +136,10 @@ app.put("/books/:bookId/", async (req, res) => {
       bookId,
     ]);
     if (existingBook === undefined) {
-      return res.status(404).json({ error: "Book not found" });
+      return res.status(404).json({
+        error: "Not Found",
+        message: `Book with ID ${bookId} not found.`
+      });
     }
 
     if (!title || !author || !price || !pages) {
@@ -146,7 +152,7 @@ app.put("/books/:bookId/", async (req, res) => {
       "UPDATE book SET title = ?, author = ?, price = ?, pages = ? WHERE id = ?";
     await db.run(query, [title, author, price, pages, bookId]);
 
-    res.status(200).json({ message: "Book updated successfully" });
+    res.status(200).json({ message: "Book Updated Successfully" });
   } catch (error) {
     res.status(500).json({ error: error.message });
   }
@@ -160,13 +166,16 @@ app.delete("/books/:bookId/", async (req, res) => {
       bookId,
     ]);
     if (existingBook === undefined) {
-      return res.status(404).json({ error: "Book not found" });
+      return res.status(404).json({
+        error: "Not Found",
+        message: `Book with ID ${bookId} not found.`
+      });
     }
 
     const query = "DELETE FROM book WHERE id = ?";
     await db.run(query, [bookId]);
 
-    res.status(200).json({ message: "Book deleted successfully" });
+    res.status(200).json({ message: "Book Deleted Successfully" });
   } catch (error) {
     res.status(500).json({ error: error.message });
   }

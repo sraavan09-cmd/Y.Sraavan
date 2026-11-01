@@ -249,26 +249,50 @@ SELECT * FROM book WHERE id = 11;
 
 ## 📸 Screenshots
 
-### 1. GET All Books
-![GET All Books](screenshots/get-all-books.png)
+### 1. GET All Books (GET /books/)
+- **Render Live URL:** [https://r-manikanta-unzk.onrender.com/books/](https://r-manikanta-unzk.onrender.com/books/)
+- **Expected HTTP Status:** `200 OK`
 
-### 2. GET One Book
-![GET One Book](screenshots/get-one-book.png)
+![GET All Books](screenshots/01-get-all-books.png)
 
-### 3. POST New Book
-![POST Book](screenshots/post-book.png)
+### 2. GET One Book (GET /books/1/)
+- **Render Live URL:** [https://r-manikanta-unzk.onrender.com/books/1/](https://r-manikanta-unzk.onrender.com/books/1/)
+- **Expected HTTP Status:** `200 OK`
 
-### 4. PUT Update Book
-![PUT Book](screenshots/put-book.png)
+![GET One Book](screenshots/02-get-one-book.png)
 
-### 5. DELETE Book
-![DELETE Book](screenshots/delete-book.png)
+### 3. POST New Book (POST /books/)
+- **Render Live URL:** [https://r-manikanta-unzk.onrender.com/books/](https://r-manikanta-unzk.onrender.com/books/)
+- **Expected HTTP Status:** `201 Created`
 
-### 6. 404 Error Response
-![404 Error](screenshots/404-error.png)
+![POST New Book](screenshots/03-post-book.png)
 
-### 7. SQLite Database Records
-![SQLite Records](screenshots/sqlite-records.png)
+### 4. PUT Update Book (PUT /books/:bookId/)
+- **Render Live URL:** [https://r-manikanta-unzk.onrender.com/books/13/](https://r-manikanta-unzk.onrender.com/books/13/)
+- **Expected HTTP Status:** `200 OK`
+
+![PUT Update Book](screenshots/04-put-book.png)
+
+### 5. DELETE Book (DELETE /books/:bookId/)
+- **Render Live URL:** [https://r-manikanta-unzk.onrender.com/books/13/](https://r-manikanta-unzk.onrender.com/books/13/)
+- **Expected HTTP Status:** `200 OK`
+
+![DELETE Book](screenshots/05-delete-book.png)
+
+### 6. 404 Error Handling (GET /books/999/ or Unknown Route)
+- **Render Live URL:** [https://r-manikanta-unzk.onrender.com/books/999/](https://r-manikanta-unzk.onrender.com/books/999/)
+- **Expected HTTP Status:** `404 Not Found`
+
+![404 Error](screenshots/06-404-error.png)
+
+### 7. SQLite Database: Inserted Record Verification
+![SQLite Database Inserted](screenshots/07-sqlite-inserted-records.png)
+
+### 8. SQLite Database: Updated Record Verification
+![SQLite Database Updated](screenshots/08-sqlite-updated-records.png)
+
+### 9. SQLite Database: Deleted Record Verification
+![SQLite Database Deleted](screenshots/09-sqlite-deleted-records.png)
 
 ---
 
