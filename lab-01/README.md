@@ -13,7 +13,7 @@
 | **Section** | CSE-2E 211 |
 | **Course** | Backend Development Fundamentals |
 | **Faculty** | Mr Yugandhar Gurjalwar |
-| **College** | Aurora |
+| **College** | Aurora Deemed-to-be-University |
 
 ---
 
@@ -151,7 +151,7 @@ npm start
   "registrationNumber": "252U1R1220",
   "section": "CSE-2E 211",
   "course": "Backend Development Fundamentals",
-  "college": "Aurora"
+  "college": "Aurora Deemed-to-be-University"
 }
 ```
 

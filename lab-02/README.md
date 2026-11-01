@@ -13,7 +13,7 @@
 | **Section** | CSE-2E 211 |
 | **Course** | Backend Development Fundamentals |
 | **Faculty** | Mr Yugandhar Gurjalwar |
-| **College** | Aurora |
+| **College** | Aurora Deemed-to-be-University |
 
 ---
 

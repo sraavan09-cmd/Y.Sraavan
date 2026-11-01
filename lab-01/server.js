@@ -18,7 +18,7 @@ app.get("/about", (req, res) => {
     registrationNumber: "252U1R1220",
     section: "CSE-2E 211",
     course: "Backend Development Fundamentals",
-    college: "Aurora",
+    college: "Aurora Deemed-to-be-University",
   });
 });
 

@@ -53,6 +53,6 @@ This repository contains all lab assignments for the **Backend Development Funda
 ## 👤 Author
 
 **Reddemoni Manikanta**  
-B.Tech CSE – Aurora  
+B.Tech CSE – Aurora Deemed-to-be-University  
 Registration Number: 252U1R1220
 

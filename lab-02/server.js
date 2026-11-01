@@ -64,6 +64,7 @@ app.get("/", (req, res) => {
     student: "Reddemoni Manikanta",
     registrationNumber: "252U1R1220",
     section: "CSE-2E 211",
+    college: "Aurora Deemed-to-be-University",
     endpoints: {
       getAllBooks: "GET /books/",
       getSingleBook: "GET /books/:bookId/",
