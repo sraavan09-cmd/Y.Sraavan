@@ -215,10 +215,10 @@ npm start
 4. **Deploy** and wait for the build to complete.
 
 5. **Verify** by visiting the provided Render URL and testing all endpoints:
-   - `https://your-render-url.onrender.com/`
-   - `https://your-render-url.onrender.com/about`
-   - `https://your-render-url.onrender.com/time`
-   - `https://your-render-url.onrender.com/unknown`
+   - `https://r-manikanta.onrender.com/`
+   - `https://r-manikanta.onrender.com/about`
+   - `https://r-manikanta.onrender.com/time`
+   - `https://r-manikanta.onrender.com/unknown`
 
 6. **Update the Live URL** at the top of this README.
 
