@@ -1,7 +1,6 @@
 # Lab 2: SQLite Database and CRUD Routes
 
-> **🔗 Live Deployment URL:** [https://r-manikanta-unzk.onrender.com](https://r-manikanta-unzk.onrender.com)  
-> **📚 Live API Endpoint (Books):** [https://r-manikanta-unzk.onrender.com/books/](https://r-manikanta-unzk.onrender.com/books/)
+> **🔗 Live Deployment URL:** [https://r-manikanta-unzk.onrender.com](https://r-manikanta-unzk.onrender.com)
 
 ---
 
