@@ -1,11 +1,6 @@
 # Lab 2: SQLite Database and CRUD Routes
 
-> ### 🌐 Live Deployed Endpoints (Render)
-> - **Main Server / Student Info:** [https://r-manikanta-unzk.onrender.com/](https://r-manikanta-unzk.onrender.com/)
-> - **GET All Books:** [https://r-manikanta-unzk.onrender.com/books/](https://r-manikanta-unzk.onrender.com/books/)
-> - **GET Single Book (ID 1):** [https://r-manikanta-unzk.onrender.com/books/1/](https://r-manikanta-unzk.onrender.com/books/1/)
-> - **GET Single Book (ID 2):** [https://r-manikanta-unzk.onrender.com/books/2/](https://r-manikanta-unzk.onrender.com/books/2/)
-> - **GET 404 Error Test (ID 999):** [https://r-manikanta-unzk.onrender.com/books/999/](https://r-manikanta-unzk.onrender.com/books/999/)
+> **🔗 Live Deployment URL:** [https://r-manikanta-unzk.onrender.com](https://r-manikanta-unzk.onrender.com)
 
 ---
 
@@ -274,6 +269,37 @@ SELECT * FROM book WHERE id = 11;
 
 ### 7. SQLite Database Records
 ![SQLite Records](screenshots/sqlite-records.png)
+
+---
+
+## 🚀 Deployment on Render
+
+### Steps to Deploy
+
+1. **Sign up** on [Render](https://render.com/) using your GitHub account.
+
+2. **Create a New Web Service:**
+   - Click **"New +"** → **"Web Service"**
+   - Connect your GitHub repository: `R.Manikanta`
+
+3. **Configure the Service:**
+   | Setting | Value |
+   |---------|-------|
+   | **Name** | `R-Manikanta-lab02` |
+   | **Root Directory** | `lab-02` |
+   | **Runtime** | Node |
+   | **Build Command** | `npm install` |
+   | **Start Command** | `npm start` |
+   | **Environment Variable** | `NODE_VERSION: 20.18.0` |
+
+4. **Deploy** and wait for the build to complete.
+
+5. **Verify by visiting the deployed Render URLs:**
+   - **Main Server / Student Info:** [https://r-manikanta-unzk.onrender.com/](https://r-manikanta-unzk.onrender.com/)
+   - **GET All Books:** [https://r-manikanta-unzk.onrender.com/books/](https://r-manikanta-unzk.onrender.com/books/)
+   - **GET Single Book (ID 1):** [https://r-manikanta-unzk.onrender.com/books/1/](https://r-manikanta-unzk.onrender.com/books/1/)
+   - **GET Single Book (ID 2):** [https://r-manikanta-unzk.onrender.com/books/2/](https://r-manikanta-unzk.onrender.com/books/2/)
+   - **GET 404 Error Test (ID 999):** [https://r-manikanta-unzk.onrender.com/books/999/](https://r-manikanta-unzk.onrender.com/books/999/)
 
 ---
 
