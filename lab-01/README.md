@@ -66,7 +66,7 @@ The `package.json` file is the heart of any Node.js project. Here is an explanat
 
 1. **Clone the repository:**
    ```bash
-   git clone https://github.com/YOUR_USERNAME/R.Manikanta.git
+   git clone https://github.com/manikantareddemoni-glitch/R.Manikanta.git
    cd R.Manikanta/lab-01
    ```
 
@@ -189,25 +189,7 @@ npm start
 ### 4. 404 Error – GET /unknown
 ![404 Error](screenshots/404.png)
 
-> ⚠️ **Note:** Screenshots need to be captured after running the server. See instructions below.
-
----
-
-## 📷 How to Capture Screenshots
-
-1. Start the server: `npm start`
-2. Open your browser (Chrome recommended)
-3. Visit each endpoint one by one:
-   - `http://localhost:3000/`
-   - `http://localhost:3000/about`
-   - `http://localhost:3000/time`
-   - `http://localhost:3000/unknown`
-4. For each page, press **`Win + Shift + S`** to capture a screenshot
-5. Save the screenshots in the `screenshots/` folder with these names:
-   - `home.png`
-   - `about.png`
-   - `time.png`
-   - `404.png`
+> ✅ All screenshots captured successfully from Chrome browser.
 
 ---
 
