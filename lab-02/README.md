@@ -1,6 +1,7 @@
 # Lab 2: SQLite Database and CRUD Routes
 
-> **🔗 Deployment Status:** SQLite requires persistent file storage. Free-tier platforms like Render use ephemeral filesystems, so the database resets on every deploy. Use Postman screenshots for verification instead.
+> **🔗 Live Deployment URL:** [https://r-manikanta-unzk.onrender.com](https://r-manikanta-unzk.onrender.com)  
+> **📚 Live API Endpoint (Books):** [https://r-manikanta-unzk.onrender.com/books/](https://r-manikanta-unzk.onrender.com/books/)
 
 ---
 
