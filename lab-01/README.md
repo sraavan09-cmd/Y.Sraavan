@@ -220,8 +220,6 @@ npm start
    - `https://r-manikanta.onrender.com/time`
    - `https://r-manikanta.onrender.com/unknown`
 
-6. **Update the Live URL** at the top of this README.
-
 ---
 
 ## ❗ Problems Faced and Solutions
