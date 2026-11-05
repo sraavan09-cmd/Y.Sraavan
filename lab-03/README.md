@@ -1,6 +1,6 @@
 # Lab 3: REST API, Query Parameters, Validation, and Debugging
 
-> **🔗 Live Deployment URL:** [https://r-manikanta-unzk.onrender.com](https://r-manikanta-unzk.onrender.com)
+> **🔗 Live Deployment URL:** [https://y-sraavan.onrender.com](https://y-sraavan.onrender.com)
 
 ---
 
@@ -129,13 +129,13 @@ The asynchronous initialization routine `initializeDBAndServer()` executes at st
 
 | Method | Path | Live URL | Description | Status Code |
 |:---|:---|:---|:---|:---|
-| `GET` | `/` | [Open Live Link](https://r-manikanta-unzk.onrender.com/) | API Directory, student info & system status | `200 OK` |
-| `GET` | `/books/` | [Open Live Link](https://r-manikanta-unzk.onrender.com/books/) | Retrieve books with optional query parameters | `200 OK` / `400 Bad Request` |
-| `GET` | `/books/:bookId/` | [Open Live Link (ID 1)](https://r-manikanta-unzk.onrender.com/books/1/) | Retrieve a single book by ID | `200 OK` / `400 Bad Request` / `404 Not Found` |
-| `POST` | `/books/` | [API Endpoint](https://r-manikanta-unzk.onrender.com/books/) | Create and insert a new book record | `201 Created` / `400 Bad Request` |
-| `PUT` | `/books/:bookId/` | [API Endpoint (ID 1)](https://r-manikanta-unzk.onrender.com/books/1/) | Update details of an existing book by ID | `200 OK` / `400 Bad Request` / `404 Not Found` |
-| `DELETE` | `/books/:bookId/` | [API Endpoint (ID 15)](https://r-manikanta-unzk.onrender.com/books/15/) | Delete a book record by ID | `200 OK` / `400 Bad Request` / `404 Not Found` |
-| `GET` | `/books/999/` | [Open Live Link (404 Test)](https://r-manikanta-unzk.onrender.com/books/999/) | Test 404 response for non-existent record | `404 Not Found` |
+| `GET` | `/` | [Open Live Link](https://y-sraavan.onrender.com/) | API Directory, student info & system status | `200 OK` |
+| `GET` | `/books/` | [Open Live Link](https://y-sraavan.onrender.com/books/) | Retrieve books with optional query parameters | `200 OK` / `400 Bad Request` |
+| `GET` | `/books/:bookId/` | [Open Live Link (ID 1)](https://y-sraavan.onrender.com/books/1/) | Retrieve a single book by ID | `200 OK` / `400 Bad Request` / `404 Not Found` |
+| `POST` | `/books/` | [API Endpoint](https://y-sraavan.onrender.com/books/) | Create and insert a new book record | `201 Created` / `400 Bad Request` |
+| `PUT` | `/books/:bookId/` | [API Endpoint (ID 1)](https://y-sraavan.onrender.com/books/1/) | Update details of an existing book by ID | `200 OK` / `400 Bad Request` / `404 Not Found` |
+| `DELETE` | `/books/:bookId/` | [API Endpoint (ID 15)](https://y-sraavan.onrender.com/books/15/) | Delete a book record by ID | `200 OK` / `400 Bad Request` / `404 Not Found` |
+| `GET` | `/books/999/` | [Open Live Link (404 Test)](https://y-sraavan.onrender.com/books/999/) | Test 404 response for non-existent record | `404 Not Found` |
 
 ---
 
@@ -335,37 +335,37 @@ SELECT id, title FROM book WHERE id = 15;
 ## 📸 Screenshots
 
 ### 1. GET All Books Default (GET /books/)
-- **Render Live URL:** [https://r-manikanta-unzk.onrender.com/books/](https://r-manikanta-unzk.onrender.com/books/)
+- **Render Live URL:** [https://y-sraavan.onrender.com/books/](https://y-sraavan.onrender.com/books/)
 - **Expected HTTP Status:** `200 OK`
 
 ![GET All Books Default](screenshots/01-get-all-books-default.png)
 
 ### 2. Search Query Parameter (GET /books/?search_q=JavaScript)
-- **Render Live URL:** [https://r-manikanta-unzk.onrender.com/books/?search_q=JavaScript](https://r-manikanta-unzk.onrender.com/books/?search_q=JavaScript)
+- **Render Live URL:** [https://y-sraavan.onrender.com/books/?search_q=JavaScript](https://y-sraavan.onrender.com/books/?search_q=JavaScript)
 - **Expected HTTP Status:** `200 OK`
 
 ![Search Query](screenshots/02-search-query.png)
 
 ### 3. Sorting by Price Descending (GET /books/?order_by=price&order=DESC)
-- **Render Live URL:** [https://r-manikanta-unzk.onrender.com/books/?order_by=price&order=DESC](https://r-manikanta-unzk.onrender.com/books/?order_by=price&order=DESC)
+- **Render Live URL:** [https://y-sraavan.onrender.com/books/?order_by=price&order=DESC](https://y-sraavan.onrender.com/books/?order_by=price&order=DESC)
 - **Expected HTTP Status:** `200 OK`
 
 ![Sorting](screenshots/03-sorting.png)
 
 ### 4. Pagination (GET /books/?limit=3&offset=3)
-- **Render Live URL:** [https://r-manikanta-unzk.onrender.com/books/?limit=3&offset=3](https://r-manikanta-unzk.onrender.com/books/?limit=3&offset=3)
+- **Render Live URL:** [https://y-sraavan.onrender.com/books/?limit=3&offset=3](https://y-sraavan.onrender.com/books/?limit=3&offset=3)
 - **Expected HTTP Status:** `200 OK`
 
 ![Pagination](screenshots/04-pagination.png)
 
 ### 5. Price Range Filter (GET /books/?min_price=400&max_price=800)
-- **Render Live URL:** [https://r-manikanta-unzk.onrender.com/books/?min_price=400&max_price=800](https://r-manikanta-unzk.onrender.com/books/?min_price=400&max_price=800)
+- **Render Live URL:** [https://y-sraavan.onrender.com/books/?min_price=400&max_price=800](https://y-sraavan.onrender.com/books/?min_price=400&max_price=800)
 - **Expected HTTP Status:** `200 OK`
 
 ![Price Range Filter](screenshots/05-price-filter.png)
 
 ### 6. Combined Query Filters
-- **Render Live URL:** [https://r-manikanta-unzk.onrender.com/books/?search_q=the&min_price=200&max_price=900&order_by=price&order=DESC&limit=4&offset=0](https://r-manikanta-unzk.onrender.com/books/?search_q=the&min_price=200&max_price=900&order_by=price&order=DESC&limit=4&offset=0)
+- **Render Live URL:** [https://y-sraavan.onrender.com/books/?search_q=the&min_price=200&max_price=900&order_by=price&order=DESC&limit=4&offset=0](https://y-sraavan.onrender.com/books/?search_q=the&min_price=200&max_price=900&order_by=price&order=DESC&limit=4&offset=0)
 - **Expected HTTP Status:** `200 OK`
 
 ![Combined Filters](screenshots/06-combined-filters.png)
@@ -391,7 +391,7 @@ SELECT id, title FROM book WHERE id = 15;
 ![DELETE Book](screenshots/10-delete-book.png)
 
 ### 11. 404 Not Found for Non-Existent ID
-- **Render Live URL:** [https://r-manikanta-unzk.onrender.com/books/999/](https://r-manikanta-unzk.onrender.com/books/999/)
+- **Render Live URL:** [https://y-sraavan.onrender.com/books/999/](https://y-sraavan.onrender.com/books/999/)
 - **Expected HTTP Status:** `404 Not Found`
 
 ![404 Not Found](screenshots/11-404-not-found.png)
@@ -437,15 +437,15 @@ SELECT id, title FROM book WHERE id = 15;
 4. **Deploy** and wait for the build to complete.
 
 5. **Verify by visiting the deployed Render URLs:**
-   - **Main Server / Student Info:** [https://r-manikanta-unzk.onrender.com/](https://r-manikanta-unzk.onrender.com/)
-   - **GET All Books:** [https://r-manikanta-unzk.onrender.com/books/](https://r-manikanta-unzk.onrender.com/books/)
-   - **GET Search Title:** [https://r-manikanta-unzk.onrender.com/books/?search_q=JavaScript](https://r-manikanta-unzk.onrender.com/books/?search_q=JavaScript)
-   - **GET Sort by Price:** [https://r-manikanta-unzk.onrender.com/books/?order_by=price&order=DESC](https://r-manikanta-unzk.onrender.com/books/?order_by=price&order=DESC)
-   - **GET Pagination:** [https://r-manikanta-unzk.onrender.com/books/?limit=3&offset=3](https://r-manikanta-unzk.onrender.com/books/?limit=3&offset=3)
-   - **GET Price Filter:** [https://r-manikanta-unzk.onrender.com/books/?min_price=400&max_price=800](https://r-manikanta-unzk.onrender.com/books/?min_price=400&max_price=800)
-   - **GET Combined Filters:** [https://r-manikanta-unzk.onrender.com/books/?search_q=the&min_price=200&max_price=900&order_by=price&order=DESC&limit=4&offset=0](https://r-manikanta-unzk.onrender.com/books/?search_q=the&min_price=200&max_price=900&order_by=price&order=DESC&limit=4&offset=0)
-   - **GET Single Book (ID 1):** [https://r-manikanta-unzk.onrender.com/books/1/](https://r-manikanta-unzk.onrender.com/books/1/)
-   - **GET 404 Error Test (ID 999):** [https://r-manikanta-unzk.onrender.com/books/999/](https://r-manikanta-unzk.onrender.com/books/999/)
+   - **Main Server / Student Info:** [https://y-sraavan.onrender.com/](https://y-sraavan.onrender.com/)
+   - **GET All Books:** [https://y-sraavan.onrender.com/books/](https://y-sraavan.onrender.com/books/)
+   - **GET Search Title:** [https://y-sraavan.onrender.com/books/?search_q=JavaScript](https://y-sraavan.onrender.com/books/?search_q=JavaScript)
+   - **GET Sort by Price:** [https://y-sraavan.onrender.com/books/?order_by=price&order=DESC](https://y-sraavan.onrender.com/books/?order_by=price&order=DESC)
+   - **GET Pagination:** [https://y-sraavan.onrender.com/books/?limit=3&offset=3](https://y-sraavan.onrender.com/books/?limit=3&offset=3)
+   - **GET Price Filter:** [https://y-sraavan.onrender.com/books/?min_price=400&max_price=800](https://y-sraavan.onrender.com/books/?min_price=400&max_price=800)
+   - **GET Combined Filters:** [https://y-sraavan.onrender.com/books/?search_q=the&min_price=200&max_price=900&order_by=price&order=DESC&limit=4&offset=0](https://y-sraavan.onrender.com/books/?search_q=the&min_price=200&max_price=900&order_by=price&order=DESC&limit=4&offset=0)
+   - **GET Single Book (ID 1):** [https://y-sraavan.onrender.com/books/1/](https://y-sraavan.onrender.com/books/1/)
+   - **GET 404 Error Test (ID 999):** [https://y-sraavan.onrender.com/books/999/](https://y-sraavan.onrender.com/books/999/)
 
 ---
 

@@ -19,8 +19,8 @@ This repository contains all lab assignments for the **Backend Development Funda
 | Lab No. | Title | Folder | Live Deployment | Status |
 |:---|:---|:---|:---|:---:|
 | **Lab 01** | Node.js and Express Server | [lab-01/](./lab-01/) | [🔗 Live Server](https://r-manikanta.onrender.com) | ✅ Completed |
-| **Lab 02** | SQLite Database and CRUD Routes | [lab-02/](./lab-02/) | [🔗 Live Server](https://r-manikanta-unzk.onrender.com) | ✅ Completed |
-| **Lab 03** | REST API, Query Parameters, Validation, Debugging | [lab-03/](./lab-03/) | [🔗 Live Server](https://r-manikanta-unzk.onrender.com) | ✅ Completed |
+| **Lab 02** | SQLite Database and CRUD Routes | [lab-02/](./lab-02/) | [🔗 Live Server](https://y-sraavan.onrender.com) | ✅ Completed |
+| **Lab 03** | REST API, Query Parameters, Validation, Debugging | [lab-03/](./lab-03/) | [🔗 Live Server](https://y-sraavan.onrender.com) | ✅ Completed |
 | **Lab 04** | *Coming Soon* | lab-04/ | — | 🔲 Pending |
 | **Lab 05** | *Coming Soon* | lab-05/ | — | 🔲 Pending |
 | **Lab 06** | *Coming Soon* | lab-06/ | — | 🔲 Pending |
