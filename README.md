@@ -1,7 +1,7 @@
 # Backend Development Fundamentals – Lab Repository
 
-**Student Name:** Reddemoni Manikanta  
-**Registration Number:** 252U1R1220  
+**Student Name:** Yarraballi Sraavan  
+**Registration Number:** 252U1R1264  
 **Section:** CSE-2E 211  
 **Course:** Backend Development Fundamentals – Year II Term II  
 **Faculty:** Mr Yugandhar Gurjalwar  
@@ -54,7 +54,7 @@ This repository contains all lab assignments for the **Backend Development Funda
 
 ## 👤 Author
 
-**Reddemoni Manikanta**  
+**Yarraballi Sraavan**  
 B.Tech CSE – Aurora Deemed-to-be-University  
-Registration Number: 252U1R1220
+Registration Number: 252U1R1264
 

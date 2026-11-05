@@ -1,7 +1,7 @@
 # Lab 3: Debugging Exercise & Troubleshooting Guide
 
-**Student Name:** Reddemoni Manikanta  
-**Registration Number:** 252U1R1220  
+**Student Name:** Yarraballi Sraavan  
+**Registration Number:** 252U1R1264  
 **Section:** CSE-2E 211  
 **Subject:** Backend Development Fundamentals  
 **College:** Aurora Deemed-to-be University  
@@ -26,9 +26,9 @@ Error: listen EADDRINUSE: address already in use :::3000
     at Server.setupListenHandle [as _listen2] (node:net:1940:16)
     at listenInCluster (node:net:1997:12)
     at Server.listen (node:net:2102:7)
-    at Function.listen (C:\Users\shekar\OneDrive\Desktop\R.Manikanta\lab-03\node_modules\express\lib\application.js:605:24)
+    at Function.listen (C:\Users\sraav\OneDrive\Desktop\LABS TERM 2 BACK END\lab-03\node_modules\express\lib\application.js:605:24)
     at Server.<anonymous> ([eval]:1:104)
-    at Server.f (C:\Users\shekar\OneDrive\Desktop\R.Manikanta\lab-03\node_modules\once\once.js:25:25)
+    at Server.f (C:\Users\sraav\OneDrive\Desktop\LABS TERM 2 BACK END\lab-03\node_modules\once\once.js:25:25)
     at Object.onceWrapper (node:events:633:28)
     at Server.emit (node:events:531:35)
     at emitListeningNT (node:net:1983:10)
@@ -92,7 +92,7 @@ node:internal/modules/cjs/loader:1386
 
 Error: Cannot find module './wrong-sqlite-path'
 Require stack:
-- C:\Users\shekar\OneDrive\Desktop\R.Manikanta\lab-03\[eval]
+- C:\Users\sraav\OneDrive\Desktop\LABS TERM 2 BACK END\lab-03\[eval]
     at Function._resolveFilename (node:internal/modules/cjs/loader:1383:15)
     at defaultResolveImpl (node:internal/modules/cjs/loader:1025:19)
     at resolveForCJSWithHooks (node:internal/modules/cjs/loader:1030:22)
@@ -105,7 +105,7 @@ Require stack:
     at runScriptInThisContext (node:internal/vm:209:10) {
   code: 'MODULE_NOT_FOUND',
   requireStack: [
-    'C:\\Users\\shekar\\OneDrive\\Desktop\\R.Manikanta\\lab-03\\[eval]'
+    'C:\\Users\\sraav\\OneDrive\\Desktop\\LABS TERM 2 BACK END\\lab-03\\[eval]'
   ]
 }
 ```
@@ -136,7 +136,7 @@ Node.js resolves module specifiers by looking into `node_modules` for bare packa
 ```text
 SQLITE ERROR CAUGHT: SQLITE_ERROR: no such table: books
 Error: SQLITE_ERROR: no such table: books
-    at Statement.all (C:\Users\shekar\OneDrive\Desktop\R.Manikanta\lab-03\node_modules\sqlite3\lib\sqlite3.js:15:21)
+    at Statement.all (C:\Users\sraav\OneDrive\Desktop\LABS TERM 2 BACK END\lab-03\node_modules\sqlite3\lib\sqlite3.js:15:21)
     ...
 ```
 

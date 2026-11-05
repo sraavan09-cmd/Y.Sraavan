@@ -1,8 +1,8 @@
 {
   "info": {
     "_postman_id": "a9b1c2d3-e4f5-4678-9012-3456789abcde",
-    "name": "Lab 3 - REST API & Query Parameters (R. Manikanta)",
-    "description": "Postman Collection for Lab 3: REST API, Query Parameters, Validation, and Debugging. Student: Reddemoni Manikanta (252U1R1220).",
+    "name": "Lab 3 - REST API & Query Parameters (Yarraballi Sraavan)",
+    "description": "Postman Collection for Lab 3: REST API, Query Parameters, Validation, and Debugging. Student: Yarraballi Sraavan (252U1R1264).",
     "schema": "https://schema.getpostman.com/json/collection/v2.1.0/collection.json"
   },
   "variable": [

@@ -84,8 +84,8 @@ initializeDBAndServer();
 app.get("/", (req, res) => {
   res.status(200).json({
     message: "Welcome to Backend Development Fundamentals - Lab 3 (REST API, Query Parameters, Validation & Debugging)",
-    student: "Reddemoni Manikanta",
-    registrationNumber: "252U1R1220",
+    student: "Yarraballi Sraavan",
+    registrationNumber: "252U1R1264",
     section: "CSE-2E 211",
     college: "Aurora Deemed-to-be-University",
     faculty: "Mr Yugandhar Gurjalwar",

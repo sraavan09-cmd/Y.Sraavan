@@ -7,15 +7,15 @@ const PORT = process.env.PORT || 3000;
 app.get("/", (req, res) => {
   res.status(200).json({
     message: "Welcome to the Backend Development Fundamentals Lab 1!",
-    student: "Reddemoni Manikanta",
+    student: "Yarraballi Sraavan",
     lab: "Lab 1 - Node.js and Express Server",
   });
 });
 
 app.get("/about", (req, res) => {
   res.status(200).json({
-    name: "Reddemoni Manikanta",
-    registrationNumber: "252U1R1220",
+    name: "Yarraballi Sraavan",
+    registrationNumber: "252U1R1264",
     section: "CSE-2E 211",
     course: "Backend Development Fundamentals",
     college: "Aurora Deemed-to-be-University",

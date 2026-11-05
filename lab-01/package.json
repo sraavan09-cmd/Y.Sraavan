@@ -15,7 +15,7 @@
     "lab1",
     "server"
   ],
-  "author": "Reddemoni Manikanta",
+  "author": "Yarraballi Sraavan",
   "license": "ISC",
   "dependencies": {
     "express": "^5.3.0"
