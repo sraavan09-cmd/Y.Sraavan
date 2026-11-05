@@ -1,6 +1,6 @@
 # Lab 2: SQLite Database and CRUD Routes
 
-> **🔗 Live Deployment URL:** [https://r-manikanta-unzk.onrender.com](https://r-manikanta-unzk.onrender.com)
+> **🔗 Live Deployment URL:** [https://y-sraavan.onrender.com](https://y-sraavan.onrender.com)
 
 ---
 
@@ -116,13 +116,13 @@ The function `initializeDBAndServer()` handles:
 
 | Method | Path | Live URL | Description | Status Code |
 |:---|:---|:---|:---|:---|
-| `GET` | `/` | [Open Live Link](https://r-manikanta-unzk.onrender.com/) | Welcome message, student details & endpoint list | `200 OK` |
-| `GET` | `/books/` | [Open Live Link](https://r-manikanta-unzk.onrender.com/books/) | Retrieve all books from SQLite database | `200 OK` |
-| `GET` | `/books/:bookId/` | [Open Live Link (ID 1)](https://r-manikanta-unzk.onrender.com/books/1/) | Retrieve a single book by ID | `200 OK` / `404 Not Found` |
-| `POST` | `/books/` | [API Endpoint](https://r-manikanta-unzk.onrender.com/books/) | Add a new book to the database | `201 Created` / `400 Bad Request` |
-| `PUT` | `/books/:bookId/` | [API Endpoint (ID 1)](https://r-manikanta-unzk.onrender.com/books/1/) | Update an existing book's details | `200 OK` / `404 Not Found` |
-| `DELETE` | `/books/:bookId/` | [API Endpoint (ID 1)](https://r-manikanta-unzk.onrender.com/books/1/) | Delete a book by ID | `200 OK` / `404 Not Found` |
-| `GET` | `/books/999/` | [Open Live Link (404 Test)](https://r-manikanta-unzk.onrender.com/books/999/) | Test 404 error response for non-existent book | `404 Not Found` |
+| `GET` | `/` | [Open Live Link](https://y-sraavan.onrender.com/) | Welcome message, student details & endpoint list | `200 OK` |
+| `GET` | `/books/` | [Open Live Link](https://y-sraavan.onrender.com/books/) | Retrieve all books from SQLite database | `200 OK` |
+| `GET` | `/books/:bookId/` | [Open Live Link (ID 1)](https://y-sraavan.onrender.com/books/1/) | Retrieve a single book by ID | `200 OK` / `404 Not Found` |
+| `POST` | `/books/` | [API Endpoint](https://y-sraavan.onrender.com/books/) | Add a new book to the database | `201 Created` / `400 Bad Request` |
+| `PUT` | `/books/:bookId/` | [API Endpoint (ID 1)](https://y-sraavan.onrender.com/books/1/) | Update an existing book's details | `200 OK` / `404 Not Found` |
+| `DELETE` | `/books/:bookId/` | [API Endpoint (ID 1)](https://y-sraavan.onrender.com/books/1/) | Delete a book by ID | `200 OK` / `404 Not Found` |
+| `GET` | `/books/999/` | [Open Live Link (404 Test)](https://y-sraavan.onrender.com/books/999/) | Test 404 error response for non-existent book | `404 Not Found` |
 
 ---
 
@@ -250,37 +250,37 @@ SELECT * FROM book WHERE id = 11;
 ## 📸 Screenshots
 
 ### 1. GET All Books (GET /books/)
-- **Render Live URL:** [https://r-manikanta-unzk.onrender.com/books/](https://r-manikanta-unzk.onrender.com/books/)
+- **Render Live URL:** [https://y-sraavan.onrender.com/books/](https://y-sraavan.onrender.com/books/)
 - **Expected HTTP Status:** `200 OK`
 
 ![GET All Books](screenshots/01-get-all-books.png)
 
 ### 2. GET One Book (GET /books/1/)
-- **Render Live URL:** [https://r-manikanta-unzk.onrender.com/books/1/](https://r-manikanta-unzk.onrender.com/books/1/)
+- **Render Live URL:** [https://y-sraavan.onrender.com/books/1/](https://y-sraavan.onrender.com/books/1/)
 - **Expected HTTP Status:** `200 OK`
 
 ![GET One Book](screenshots/02-get-one-book.png)
 
 ### 3. POST New Book (POST /books/)
-- **Render Live URL:** [https://r-manikanta-unzk.onrender.com/books/](https://r-manikanta-unzk.onrender.com/books/)
+- **Render Live URL:** [https://y-sraavan.onrender.com/books/](https://y-sraavan.onrender.com/books/)
 - **Expected HTTP Status:** `201 Created`
 
 ![POST New Book](screenshots/03-post-book.png)
 
 ### 4. PUT Update Book (PUT /books/:bookId/)
-- **Render Live URL:** [https://r-manikanta-unzk.onrender.com/books/13/](https://r-manikanta-unzk.onrender.com/books/13/)
+- **Render Live URL:** [https://y-sraavan.onrender.com/books/13/](https://y-sraavan.onrender.com/books/13/)
 - **Expected HTTP Status:** `200 OK`
 
 ![PUT Update Book](screenshots/04-put-book.png)
 
 ### 5. DELETE Book (DELETE /books/:bookId/)
-- **Render Live URL:** [https://r-manikanta-unzk.onrender.com/books/13/](https://r-manikanta-unzk.onrender.com/books/13/)
+- **Render Live URL:** [https://y-sraavan.onrender.com/books/13/](https://y-sraavan.onrender.com/books/13/)
 - **Expected HTTP Status:** `200 OK`
 
 ![DELETE Book](screenshots/05-delete-book.png)
 
 ### 6. 404 Error Handling (GET /books/999/ or Unknown Route)
-- **Render Live URL:** [https://r-manikanta-unzk.onrender.com/books/999/](https://r-manikanta-unzk.onrender.com/books/999/)
+- **Render Live URL:** [https://y-sraavan.onrender.com/books/999/](https://y-sraavan.onrender.com/books/999/)
 - **Expected HTTP Status:** `404 Not Found`
 
 ![404 Error](screenshots/06-404-error.png)
@@ -319,11 +319,11 @@ SELECT * FROM book WHERE id = 11;
 4. **Deploy** and wait for the build to complete.
 
 5. **Verify by visiting the deployed Render URLs:**
-   - **Main Server / Student Info:** [https://r-manikanta-unzk.onrender.com/](https://r-manikanta-unzk.onrender.com/)
-   - **GET All Books:** [https://r-manikanta-unzk.onrender.com/books/](https://r-manikanta-unzk.onrender.com/books/)
-   - **GET Single Book (ID 1):** [https://r-manikanta-unzk.onrender.com/books/1/](https://r-manikanta-unzk.onrender.com/books/1/)
-   - **GET Single Book (ID 2):** [https://r-manikanta-unzk.onrender.com/books/2/](https://r-manikanta-unzk.onrender.com/books/2/)
-   - **GET 404 Error Test (ID 999):** [https://r-manikanta-unzk.onrender.com/books/999/](https://r-manikanta-unzk.onrender.com/books/999/)
+   - **Main Server / Student Info:** [https://y-sraavan.onrender.com/](https://y-sraavan.onrender.com/)
+   - **GET All Books:** [https://y-sraavan.onrender.com/books/](https://y-sraavan.onrender.com/books/)
+   - **GET Single Book (ID 1):** [https://y-sraavan.onrender.com/books/1/](https://y-sraavan.onrender.com/books/1/)
+   - **GET Single Book (ID 2):** [https://y-sraavan.onrender.com/books/2/](https://y-sraavan.onrender.com/books/2/)
+   - **GET 404 Error Test (ID 999):** [https://y-sraavan.onrender.com/books/999/](https://y-sraavan.onrender.com/books/999/)
 
 ---
 
