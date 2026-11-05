@@ -8,8 +8,8 @@
 
 | Field | Details |
 |-------|---------|
-| **Name** | Reddemoni Manikanta |
-| **Registration Number** | 252U1R1220 |
+| **Name** | Yarraballi Sraavan |
+| **Registration Number** | 252U1R1264 |
 | **Section** | CSE-2E 211 |
 | **Course** | Backend Development Fundamentals |
 | **Faculty** | Mr Yugandhar Gurjalwar |
@@ -66,8 +66,8 @@ The `package.json` file is the heart of any Node.js project. Here is an explanat
 
 1. **Clone the repository:**
    ```bash
-   git clone https://github.com/manikantareddemoni-glitch/R.Manikanta.git
-   cd R.Manikanta/lab-01
+   git clone https://github.com/sraavan09-cmd/Y.Sraavan.git
+   cd lab-01
    ```
 
 2. **Install dependencies:**
@@ -139,7 +139,7 @@ npm start
 ```json
 {
   "message": "Welcome to the Backend Development Fundamentals Lab 1!",
-  "student": "Reddemoni Manikanta",
+  "student": "Yarraballi Sraavan",
   "lab": "Lab 1 - Node.js and Express Server"
 }
 ```
@@ -147,8 +147,8 @@ npm start
 **GET /about**
 ```json
 {
-  "name": "Reddemoni Manikanta",
-  "registrationNumber": "252U1R1220",
+  "name": "Yarraballi Sraavan",
+  "registrationNumber": "252U1R1264",
   "section": "CSE-2E 211",
   "course": "Backend Development Fundamentals",
   "college": "Aurora Deemed-to-be-University"
@@ -201,12 +201,12 @@ npm start
 
 2. **Create a New Web Service:**
    - Click **"New +"** → **"Web Service"**
-   - Connect your GitHub repository: `R.Manikanta`
+   - Connect your GitHub repository: `Y.Sraavan`
 
 3. **Configure the Service:**
    | Setting | Value |
    |---------|-------|
-   | **Name** | `manikanta-lab01` |
+   | **Name** | `sraavan-lab01` |
    | **Root Directory** | `lab-01` |
    | **Runtime** | Node |
    | **Build Command** | `npm install` |
@@ -251,5 +251,5 @@ This lab provided hands-on experience with backend development fundamentals and 
 
 ## 👤 Author
 
-**Reddemoni Manikanta** – 252U1R1220 – CSE-2E 211
+**Yarraballi Sraavan** – 252U1R1264 – CSE-2E 211
 

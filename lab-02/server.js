@@ -61,8 +61,8 @@ initializeDBAndServer();
 app.get("/", (req, res) => {
   res.status(200).json({
     message: "Welcome to Backend Development Fundamentals - Lab 2 (SQLite Database and CRUD Routes)",
-    student: "Reddemoni Manikanta",
-    registrationNumber: "252U1R1220",
+    student: "Yarraballi Sraavan",
+    registrationNumber: "252U1R1264",
     section: "CSE-2E 211",
     college: "Aurora Deemed-to-be-University",
     endpoints: {

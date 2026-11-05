@@ -8,8 +8,8 @@
 
 | Field | Details |
 |-------|---------|
-| **Name** | Reddemoni Manikanta |
-| **Registration Number** | 252U1R1220 |
+| **Name** | Yarraballi Sraavan |
+| **Registration Number** | 252U1R1264 |
 | **Section** | CSE-2E 211 |
 | **Course** | Backend Development Fundamentals |
 | **Faculty** | Mr Yugandhar Gurjalwar |
@@ -97,7 +97,7 @@ The asynchronous initialization routine `initializeDBAndServer()` executes at st
 
 1. **Navigate to the lab-03 directory:**
    ```bash
-   cd R.Manikanta/lab-03
+   cd lab-03
    ```
 
 2. **Install dependencies:**
@@ -421,13 +421,13 @@ SELECT id, title FROM book WHERE id = 15;
 
 2. **Create a New Web Service:**
    - Click **"New +"** → **"Web Service"**
-   - Connect your GitHub repository: `R.Manikanta`
+   - Connect your GitHub repository: `Y.Sraavan`
 
 3. **Configure the Service:**
 
    | Setting | Value |
    |---------|-------|
-   | **Name** | `R-Manikanta-lab03` |
+   | **Name** | `sraavan-lab03` |
    | **Root Directory** | `lab-03` |
    | **Runtime** | `Node` |
    | **Build Command** | `npm install` |
@@ -487,4 +487,4 @@ In this lab, I learned:
 
 ## 👤 Author
 
-**Reddemoni Manikanta** – 252U1R1220 – CSE-2E 211
+**Yarraballi Sraavan** – 252U1R1264 – CSE-2E 211
