@@ -1,0 +1,11 @@
+# Screenshots folder for Lab 4
+Save the required screenshots here as detailed in README.md:
+- 01-register-success.png
+- 02-register-user-already-exists.png
+- 03-register-validation-errors.png
+- 04-login-success-jwt.png
+- 05-login-invalid-user.png
+- 06-login-invalid-password.png
+- 07-sqlite-cli-user-table-hashes.png
+- 08-jwt-io-decoded-token.png
+- 09-terminal-server-running.png

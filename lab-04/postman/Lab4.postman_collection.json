@@ -1,0 +1,264 @@
+{
+  "info": {
+    "_postman_id": "lab4-auth-jwt-collection-sraavan",
+    "name": "Lab 4 - User Registration, Login & JWT",
+    "description": "Postman Collection for Backend Development Fundamentals Lab 4: User Registration with bcrypt password hashing, Login authentication with JWT generation, and Books CRUD endpoints.",
+    "schema": "https://schema.getpostman.com/json/collection/v2.1.0/collection.json"
+  },
+  "variable": [
+    {
+      "key": "baseUrl",
+      "value": "http://localhost:3000",
+      "type": "string"
+    },
+    {
+      "key": "jwtToken",
+      "value": "",
+      "type": "string"
+    }
+  ],
+  "item": [
+    {
+      "name": "Authentication",
+      "item": [
+        {
+          "name": "01. Register - Success (201 Created)",
+          "request": {
+            "method": "POST",
+            "header": [
+              {
+                "key": "Content-Type",
+                "value": "application/json"
+              }
+            ],
+            "body": {
+              "mode": "raw",
+              "raw": "{\n  \"username\": \"sraavan_test\",\n  \"name\": \"Yarraballi Sraavan\",\n  \"password\": \"securePass123\"\n}"
+            },
+            "url": {
+              "raw": "{{baseUrl}}/register/",
+              "host": ["{{baseUrl}}"],
+              "path": ["register", ""]
+            },
+            "description": "Registers a new user account with bcrypt password hashing (10 salt rounds)."
+          }
+        },
+        {
+          "name": "02. Register - User Already Exists (400 Bad Request)",
+          "request": {
+            "method": "POST",
+            "header": [
+              {
+                "key": "Content-Type",
+                "value": "application/json"
+              }
+            ],
+            "body": {
+              "mode": "raw",
+              "raw": "{\n  \"username\": \"sraavan_test\",\n  \"name\": \"Duplicate User\",\n  \"password\": \"anotherSecret456\"\n}"
+            },
+            "url": {
+              "raw": "{{baseUrl}}/register/",
+              "host": ["{{baseUrl}}"],
+              "path": ["register", ""]
+            },
+            "description": "Tests rejection when attempting to register an already existing username."
+          }
+        },
+        {
+          "name": "03. Register - Missing Required Fields (400 Bad Request)",
+          "request": {
+            "method": "POST",
+            "header": [
+              {
+                "key": "Content-Type",
+                "value": "application/json"
+              }
+            ],
+            "body": {
+              "mode": "raw",
+              "raw": "{\n  \"username\": \"missing_fields_user\"\n}"
+            },
+            "url": {
+              "raw": "{{baseUrl}}/register/",
+              "host": ["{{baseUrl}}"],
+              "path": ["register", ""]
+            },
+            "description": "Tests validation error when name or password fields are missing from registration payload."
+          }
+        },
+        {
+          "name": "04. Register - Password Too Short (400 Bad Request)",
+          "request": {
+            "method": "POST",
+            "header": [
+              {
+                "key": "Content-Type",
+                "value": "application/json"
+              }
+            ],
+            "body": {
+              "mode": "raw",
+              "raw": "{\n  \"username\": \"short_pwd_user\",\n  \"name\": \"Short Password User\",\n  \"password\": \"12345\"\n}"
+            },
+            "url": {
+              "raw": "{{baseUrl}}/register/",
+              "host": ["{{baseUrl}}"],
+              "path": ["register", ""]
+            },
+            "description": "Tests enforcement of minimum password length (must be at least 6 characters)."
+          }
+        },
+        {
+          "name": "05. Login - Success (200 OK & Returns JWT)",
+          "event": [
+            {
+              "listen": "test",
+              "script": {
+                "exec": [
+                  "const responseJson = pm.response.json();",
+                  "if (responseJson.jwt_token) {",
+                  "    pm.collectionVariables.set('jwtToken', responseJson.jwt_token);",
+                  "    pm.test('JWT token received', function () {",
+                  "        pm.expect(responseJson.jwt_token).to.be.a('string');",
+                  "    });",
+                  "}"
+                ],
+                "type": "text/javascript"
+              }
+            }
+          ],
+          "request": {
+            "method": "POST",
+            "header": [
+              {
+                "key": "Content-Type",
+                "value": "application/json"
+              }
+            ],
+            "body": {
+              "mode": "raw",
+              "raw": "{\n  \"username\": \"sraavan_test\",\n  \"password\": \"securePass123\"\n}"
+            },
+            "url": {
+              "raw": "{{baseUrl}}/login/",
+              "host": ["{{baseUrl}}"],
+              "path": ["login", ""]
+            },
+            "description": "Authenticates valid credentials using bcrypt.compare() and returns a signed JWT token."
+          }
+        },
+        {
+          "name": "06. Login - Unknown User (400 Bad Request)",
+          "request": {
+            "method": "POST",
+            "header": [
+              {
+                "key": "Content-Type",
+                "value": "application/json"
+              }
+            ],
+            "body": {
+              "mode": "raw",
+              "raw": "{\n  \"username\": \"non_existent_user_999\",\n  \"password\": \"anyPassword123\"\n}"
+            },
+            "url": {
+              "raw": "{{baseUrl}}/login/",
+              "host": ["{{baseUrl}}"],
+              "path": ["login", ""]
+            },
+            "description": "Tests rejection when attempting to log in with an unregistered username."
+          }
+        },
+        {
+          "name": "07. Login - Invalid Password (400 Bad Request)",
+          "request": {
+            "method": "POST",
+            "header": [
+              {
+                "key": "Content-Type",
+                "value": "application/json"
+              }
+            ],
+            "body": {
+              "mode": "raw",
+              "raw": "{\n  \"username\": \"sraavan_test\",\n  \"password\": \"wrongPassword999\"\n}"
+            },
+            "url": {
+              "raw": "{{baseUrl}}/login/",
+              "host": ["{{baseUrl}}"],
+              "path": ["login", ""]
+            },
+            "description": "Tests rejection when an incorrect password is provided for an existing user."
+          }
+        },
+        {
+          "name": "08. Login - Missing Fields (400 Bad Request)",
+          "request": {
+            "method": "POST",
+            "header": [
+              {
+                "key": "Content-Type",
+                "value": "application/json"
+              }
+            ],
+            "body": {
+              "mode": "raw",
+              "raw": "{\n  \"username\": \"sraavan_test\"\n}"
+            },
+            "url": {
+              "raw": "{{baseUrl}}/login/",
+              "host": ["{{baseUrl}}"],
+              "path": ["login", ""]
+            },
+            "description": "Tests validation error when password or username is omitted from login payload."
+          }
+        }
+      ]
+    },
+    {
+      "name": "General & Books Endpoints",
+      "item": [
+        {
+          "name": "09. API Directory & Student Info (200 OK)",
+          "request": {
+            "method": "GET",
+            "header": [],
+            "url": {
+              "raw": "{{baseUrl}}/",
+              "host": ["{{baseUrl}}"],
+              "path": [""]
+            },
+            "description": "Returns welcome message, student details, and API directory."
+          }
+        },
+        {
+          "name": "10. GET /books/ - List Books (200 OK)",
+          "request": {
+            "method": "GET",
+            "header": [],
+            "url": {
+              "raw": "{{baseUrl}}/books/",
+              "host": ["{{baseUrl}}"],
+              "path": ["books", ""]
+            },
+            "description": "Retrieves books list from database."
+          }
+        },
+        {
+          "name": "11. 404 Route Not Found Test (404 Not Found)",
+          "request": {
+            "method": "GET",
+            "header": [],
+            "url": {
+              "raw": "{{baseUrl}}/unknown-route-test/",
+              "host": ["{{baseUrl}}"],
+              "path": ["unknown-route-test", ""]
+            },
+            "description": "Tests 404 response for non-existent routes."
+          }
+        }
+      ]
+    }
+  ]
+}
